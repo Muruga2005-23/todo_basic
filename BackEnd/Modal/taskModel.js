@@ -12,7 +12,7 @@ const taskSchema = new mongoose.Schema({
     required: [true, "A Task must have a description !"],
   },
 
-  due_date: { type: Date, min: Date.now() },
+  due_date: { type: Date },
 });
 
 const Task = mongoose.model("Task", taskSchema);
